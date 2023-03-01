@@ -18,6 +18,7 @@ const New = () => {
     }
     if (!pokemons.some(pokemon => pokemon.name === newPokemon.name || pokemon.id === newPokemon.id)) {
       setNewPokemon(newPokemon)
+      alert("Pokemon añadido");
     } 
 
   }
@@ -52,7 +53,6 @@ const New = () => {
       <option value="dark">Dark</option>
       <option value="Fairy">Fairy</option>
       <option value="Unknown">Unknown</option>
-      <option value="Developer">Developer</option>
     </select>
     <select {...register("typeTwo")} defaultValue="">
       <option value="" disabled >Second Type</option>
@@ -73,7 +73,6 @@ const New = () => {
       <option value="dark">Dark</option>
       <option value="Fairy">Fairy</option>
       <option value="Unknown">Unknown</option>
-      <option value="Developer">Developer</option>
     </select>
     <button type="submit">Agregar Pokemon</button>
   </form>

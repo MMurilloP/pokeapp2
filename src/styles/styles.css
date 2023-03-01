@@ -8,6 +8,8 @@ body {
 
   h1 {
     background-color: #e74c3c;
+    padding: 20px;
+    border-radius: 20px;
     text-align: center;
     color: white;
   }
